@@ -1,62 +1,107 @@
-# 🌌 Solar System Explorer
-link : file:///C:/Users/Rakul/OneDrive/Desktop/space%20explore/index.html
+🌌 Solar System Explorer
+🔗 Project Link (Local): file:///C:/Users/Rakul/OneDrive/Desktop/space%20explore/index.html
 
 Interactive 3D-Style Planet Navigation Website
-By Kamalakannan S
+Created by Kamalakannan S
 
 🚀 Overview
+Solar System Explorer is a visually engaging and interactive web project that allows users to explore planets, moons, and planetary information through smooth transitions and layered 3D-style animations.
 
-Solar System Explorer is a visually rich, interactive web project that lets users explore planets, moons, and descriptions using smooth transitions and animated UI elements.
-It is built using HTML + CSS (no JavaScript required), leveraging advanced CSS animations, radio-button based navigation, overlays, and layered 3D effects.
+The project is primarily built using HTML and CSS, demonstrating the power of modern CSS for creating advanced animations and interactions without relying on JavaScript.
+Optional JavaScript can be added to enhance accessibility and navigation.
 
 This project is ideal for:
 
-Web design learning
+Learning advanced CSS animations
 
-CSS animation practice
+Practicing UI/UX design
 
-Portfolio website projects
+Portfolio and showcase projects
 
-Creative UI experiments
+Creative front-end experiments
 
 ✨ Features
+🎨 Visually rich UI with animated planets and glowing previews
 
-🎨 Highly stylized UI with glowing previews and animated planets
+🌍 Detailed planet descriptions (Mercury to Pluto)
 
-🌍 Detailed descriptions for Mercury, Venus, Earth, Mars, and more
+🔄 Pure CSS navigation using radio buttons
 
-🔄 No JavaScript required – everything runs on pure CSS
+🌓 Moon representations for planets like Earth, Jupiter, and Saturn
 
-🌓 Moon navigation for planets like Earth, Jupiter, Saturn, etc.
+🪐 Planet menu with astronomical distance (AU) labels
 
-📱 Responsive layout (adapts well to different screen sizes)
+📖 Full-screen planet information panels
 
-🪐 Planet selection menu with distance (AU) labels
+💫 Smooth hover effects, transitions, overlays, and depth effects
 
-📖 Full-screen panel reader for each planet
+📱 Responsive design for different screen sizes
 
-💫 Smooth hover effects, transitions, overlays, and color shifts
+🧠 Optional JavaScript Enhancements
+While the project works completely without JavaScript, optional JS can improve usability.
+
+JavaScript Can Add:
+⌨️ Keyboard navigation (Left / Right arrow keys)
+
+🖱️ Enhanced planet selection handling
+
+♿ Accessibility improvements
+
+🔍 Active planet state tracking
+
+Example JavaScript (Optional)
+const planets = document.querySelectorAll("input[name='planet']");
+let currentIndex = [...planets].findIndex(p => p.checked);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") {
+    currentIndex = (currentIndex + 1) % planets.length;
+  }
+  if (e.key === "ArrowLeft") {
+    currentIndex = (currentIndex - 1 + planets.length) % planets.length;
+  }
+  planets[currentIndex].checked = true;
+});
+📌 JavaScript is optional and does not replace the CSS-based logic.
 
 📁 Project Structure
 📦 Solar-System-Explorer
  ┣ 📜 index.html
  ┣ 🎨 style.css
- ┗ 🖼 (Images loaded from external URLs)
+ ┗ 🖼 Images loaded from external URLs
+(Optional)
 
+ ┗ 📜 script.js
 🛠️ Technologies Used
-
 HTML5
 
 CSS3
 
 Flexbox
 
-Transitions
+CSS Transitions
 
-Transform effects
+CSS Animations
 
-Animations
+Transform & 3D Effects
 
-Positioning & layering
+Positioning & Layering
 
-Font Awesome Icons (CDN)
+Font Awesome (CDN)
+
+▶️ How to Run the Project
+Download or clone the repository
+
+Keep all files in the same folder
+
+Open index.html in any modern browser (Chrome / Edge recommended)
+
+Use the planet menu or keyboard arrows (if JS enabled)
+
+👨‍🚀 Author
+Kamalakannan S
+Front-End UI & Animation Project
+
+📜 License
+This project is open for learning and personal use.
+Feel free to modify and enhance it for educational or portfolio purposes.
